@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hành Trình Thổ Nhĩ Kỳ 2026 | Thống Nhất</title>
+    <title>Cẩm Nang Du Lịch Thổ Nhĩ Kỳ 2026 | Vietravel & Thống Nhất</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -15,17 +15,14 @@
             color: #e2e8f0;
         }
 
-        /* Gradient ánh vàng kim theo banner */
+        /* Chữ ánh vàng kim */
         .gold-text {
             background: linear-gradient(135deg, #fceabb 0%, #f8b500 50%, #e7c067 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .gold-border {
-            border-color: #c5a059;
-        }
-
+        /* Thẻ nền tối hiệu ứng kính mờ */
         .glass-dark {
             background: rgba(10, 25, 47, 0.85);
             backdrop-filter: blur(12px);
@@ -35,18 +32,15 @@
 </head>
 <body class="antialiased pb-24">
 
-    <!-- ==================== HEADER / BANNER ==================== -->
+    <!-- ==================== BANNER HEADER ==================== -->
     <header class="relative bg-[#051329] border-b border-[#c5a059]/40 py-10 px-4 text-center shadow-2xl overflow-hidden">
         <div class="max-w-4xl mx-auto space-y-3 relative z-10">
-            <!-- Brand -->
-            <p class="text-xs uppercase tracking-[0.3em] text-slate-300 font-semibold">• thongnhat •</p>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-300 font-semibold">• thongnhat • vietravel official •</p>
             
-            <!-- Biểu tượng Mosque & Trăng sao -->
             <div class="flex justify-center my-2">
                 <i class="fa-solid fa-mosque text-3xl text-[#e7c067]"></i>
             </div>
 
-            <!-- Title -->
             <h1 class="text-3xl sm:text-5xl font-extrabold tracking-wide gold-text uppercase">
                 Hành Trình Thổ Nhĩ Kỳ
             </h1>
@@ -54,37 +48,59 @@
                 20<i class="fa-solid fa-star text-base"></i>26
             </div>
             
-            <p class="text-xs sm:text-sm text-slate-300 tracking-[0.2em] uppercase pt-2">
-                Tạo Phong Cách - Mở Hành Trình
+            <p class="text-xs sm:text-sm text-slate-300 tracking-[0.2em] uppercase pt-1">
+                Vùng Đất Huyền Thoại Giao Thoa Văn Hóa Á - Âu (25/10/2026 - 02/11/2026)
             </p>
         </div>
     </header>
 
-
     <main class="max-w-5xl mx-auto px-4 py-8 space-y-12">
 
-        <!-- ==================== KHỐI 1: THÔNG TIN KHỞI HÀNH ==================== -->
-        <section id="thong-tin" class="scroll-mt-6 glass-dark rounded-3xl p-6 sm:p-8 shadow-2xl">
-            <h2 class="text-xl font-bold gold-text mb-6 flex items-center gap-2 border-b border-[#c5a059]/30 pb-3">
+        <!-- ==================== KHỐI 1: TỔNG QUAN & KHỞI HÀNH ==================== -->
+        <section id="thong-tin" class="scroll-mt-6 glass-dark rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+            <!-- 3 Tiêu chuẩn chính -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 border-b border-[#c5a059]/30 pb-6">
+                <div class="flex items-center gap-3 bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
+                    <i class="fa-solid fa-clock text-[#f8b500] text-2xl"></i>
+                    <div>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">Thời Lượng</p>
+                        <p class="text-sm font-bold text-slate-100">9 Ngày 8 Đêm</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
+                    <i class="fa-solid fa-plane text-[#f8b500] text-2xl"></i>
+                    <div>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">Hàng Không</p>
+                        <p class="text-sm font-bold text-slate-100">Turkish Airlines 4★ (TK165/TK252)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
+                    <i class="fa-solid fa-hotel text-[#f8b500] text-2xl"></i>
+                    <div>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">Lưu Trú</p>
+                        <p class="text-sm font-bold text-slate-100">Khách Sạn 5★ & Khách Sạn Hang Đá</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chi tiết chuyến bay & tập trung -->
+            <h2 class="text-xl font-bold gold-text flex items-center gap-2">
                 <i class="fa-solid fa-plane-departure text-[#f8b500]"></i> Thông Tin Khởi Hành & Chuyến Bay
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Chặng đi -->
                 <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/30">
                     <span class="text-xs font-bold text-[#f8b500] uppercase">Chặng Đi (25/10/2026)</span>
                     <p class="text-sm font-semibold text-slate-200 mt-2">TK165: Hà Nội (23:05) ➔ Istanbul (05:10)</p>
                     <p class="text-sm font-semibold text-slate-200 mt-1">TK2004: Nối chuyến tới Cappadocia (10:35)</p>
                 </div>
 
-                <!-- Chặng về -->
                 <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/30">
                     <span class="text-xs font-bold text-[#f8b500] uppercase">Chặng Về (01/11/2026)</span>
                     <p class="text-sm font-semibold text-slate-200 mt-2">TK252: Istanbul (18:05) ➔ Hà Nội (07:05+1)</p>
                     <p class="text-xs text-slate-400 mt-1">Hạ cánh Nội Bài lúc 07:05 ngày 02/11/2026</p>
                 </div>
 
-                <!-- Tập trung -->
                 <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/30">
                     <span class="text-xs font-bold text-[#f8b500] uppercase">Điểm Tập Trung Đoàn</span>
                     <p class="text-sm font-bold text-slate-100 mt-2">18h00 ngày 25/10/2026</p>
@@ -93,12 +109,11 @@
             </div>
         </section>
 
-
-        <!-- ==================== KHỐI 2: LỊCH TRÌNH DI CHUYỂN (TABLE CHUẨN THEO ẢNH) ==================== -->
+        <!-- ==================== KHỐI 2: LỘ TRÌNH TỔNG QUAN (FILE PDF) ==================== -->
         <section id="lich-trinh" class="scroll-mt-6 glass-dark rounded-3xl p-6 sm:p-8 shadow-2xl">
             <div class="text-center mb-6">
-                <h2 class="text-2xl font-bold gold-text uppercase tracking-wide">Hành Trình Di Chuyển</h2>
-                <p class="text-xs text-slate-400 tracking-widest uppercase">Thổ Nhĩ Kỳ 2026</p>
+                <h2 class="text-2xl font-bold gold-text uppercase tracking-wide">Lộ Trình Tổng Quan</h2>
+                <p class="text-xs text-slate-400 tracking-widest uppercase">Chương Trình Rút Gọn (9 Ngày 8 Đêm)</p>
             </div>
 
             <div class="overflow-x-auto">
@@ -106,158 +121,218 @@
                     <thead>
                         <tr class="bg-[#051329] text-[#f8b500] uppercase font-bold border-b border-[#c5a059]/40 text-center">
                             <th class="p-3 border-r border-[#c5a059]/30">Ngày</th>
-                            <th class="p-3 border-r border-[#c5a059]/30">Hành trình</th>
-                            <th class="p-3 border-r border-[#c5a059]/30">Thời gian di chuyển<br><span class="text-[10px] lowercase font-normal text-slate-400">(Thông tin tham khảo)</span></th>
-                            <th class="p-3">Ăn uống & Lưu trú</th>
+                            <th class="p-3 border-r border-[#c5a059]/30">Hành Trình</th>
+                            <th class="p-3 border-r border-[#c5a059]/30">Hoạt Động Chính</th>
+                            <th class="p-3 border-r border-[#c5a059]/30">Thời Gian Di Chuyển</th>
+                            <th class="p-3">Ăn Uống & Lưu Trú</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-[#c5a059]/20 font-medium text-slate-200">
                         <tr class="hover:bg-[#0b2247]/50">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">25.10</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Hà Nội - Istanbul</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Bay lúc 23h05 – hạ cánh 05h10</td>
-                            <td class="p-3">Ăn nhẹ trên máy bay[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Hà Nội - Istanbul</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Tập trung đoàn, làm thủ tục bay đêm đi Istanbul</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Bay 23h05 - hạ cánh 05h10 (26.10)</td>
+                            <td class="p-3">Ăn nhẹ trên máy bay. Bay đêm</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50 bg-[#061833]/40">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">26.10</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Istanbul – Cappadoccia</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Nối chuyến bay tới Cappadoccia hạ cánh 10h35</td>
-                            <td class="p-3">Ăn 2 bữa. Nghỉ đêm tại Cappadocia[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Istanbul - Cappadocia</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Nối chuyến Cappadocia, tham quan Thành phố ngầm Kaymakli</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Nối chuyến hạ cánh 10h35</td>
+                            <td class="p-3">Ăn 2 bữa. Nghỉ đêm tại Cappadocia</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">27.10</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Cappadocia</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Di chuyển nội vùng[cite: 1]</td>
-                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Cappadocia[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Cappadocia</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Bay khinh khí cầu, thăm Làng gốm Avanos & xem múa Belly Dance</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Di chuyển tham quan nội vùng</td>
+                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Cappadocia</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50 bg-[#061833]/40">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">28.10</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Cappadocia – Konya - Pammukale</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">~ 3 tiếng ~ 260 km<br>~ 4 tiếng ~ 380 km</td>
-                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Pammukale[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Cappadocia - Konya - Pamukkale</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Thăm Tu viện Mevlana (Konya), di chuyển về Pamukkale</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">~3 tiếng (~260km) / ~4 tiếng (~380km)</td>
+                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Pamukkale</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">29.10</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Pammukale - Izmir</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">~ 2 tiếng 40 phút ~ 250 km</td>
-                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Izmir[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Pamukkale - Izmir</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Thăm Lâu Đài Bông, Thành cổ Ephesus & Làng cổ Şirince</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">~2 tiếng 40 phút (~250km)</td>
+                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Izmir</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50 bg-[#061833]/40">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">30.10</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Izmir – Canakkale – Thành Troy</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">~ 3 tiếng 20 phút ~ 345 km<br>~ 2 tiếng 30 phút ~ 160 km</td>
-                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Canakkale[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Izmir - Çanakkale - Troy</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Khám phá Thành cổ Troy huyền thoại & chụp hình Ngựa gỗ Troy</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">~3 tiếng 20m (~345km) / ~2 tiếng 30m (~160km)</td>
+                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Çanakkale</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">31.10</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Canakkale - Istanbul</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Di chuyển đường bộ về Istanbul[cite: 1]</td>
-                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Istanbul[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Çanakkale - Istanbul</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Trải nghiệm Du thuyền Eo biển Bosphorus & dạo Phố Taksim</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Di chuyển đường bộ về Istanbul</td>
+                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Istanbul</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50 bg-[#061833]/40">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">01.11</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Istanbul – Hà Nội</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">IST-HAN: 18:05 – 07:05+1</td>
-                            <td class="p-3">Ăn 2 bữa. Nghỉ đêm trên máy bay[cite: 1]</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Istanbul - Hà Nội</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Thăm Thánh đường Xanh, Hagia Sophia, Chợ Grand Bazaar, ra sân bay</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Bay TK252 (18:05 - 07:05+1)</td>
+                            <td class="p-3">Ăn 2 bữa. Nghỉ đêm trên máy bay</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">02.11</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">Hà Nội</td>
-                            <td class="p-3 border-r border-[#c5a059]/20">-</td>
-                            <td class="p-3">Hạ cánh lúc 7h05</td>
+                            <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Hà Nội (Nội Bài)</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Hạ cánh Nội Bài, hoàn tất thủ tục nhập cảnh & chia tay đoàn</td>
+                            <td class="p-3 border-r border-[#c5a059]/20">Hạ cánh lúc 07h05 sáng</td>
+                            <td class="p-3">Kết thúc chuyến đi trọn vẹn</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-
-        <!-- ==================== KHỐI 3: HƯỚNG DẪN CHUẨN BỊ & LƯU Ý ==================== -->
-        <section id="chuann-bi" class="scroll-mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- ==================== KHỐI 3: CHUẨN BỊ & TIỆN ÍCH (FILE PDF) ==================== -->
+        <section id="chuan-bi" class="scroll-mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="glass-dark rounded-3xl p-6 border border-[#c5a059]/30">
                 <h3 class="text-lg font-bold gold-text border-b border-[#c5a059]/30 pb-3 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-clipboard-list text-[#f8b500]"></i> Chuẩn Bị Bắt Buộc
+                    <i class="fa-solid fa-clipboard-check text-[#f8b500]"></i> Chuẩn Bị Bắt Buộc Trước Xuất Cảnh
                 </h3>
                 <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#f8b500] mt-1"></i> <span><strong>Hộ chiếu:</strong> Còn hạn > 6 tháng, trùng khớp Visa.[cite: 1]</span></li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#f8b500] mt-1"></i> <span><strong>eTax Mobile:</strong> Bắt buộc hoàn thành nghĩa vụ thuế cá nhân trước khi đi.[cite: 1]</span></li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#f8b500] mt-1"></i> <span><strong>Tài chính:</strong> Tiền mặt USD/EUR & Thẻ Visa/Mastercard.[cite: 1]</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-passport text-[#f8b500] mt-1"></i> <span><strong>1. Hộ Chiếu Phổ Thông:</strong> Trùng khớp hoàn toàn với Visa. Hạn sử dụng > 6 tháng, không rách hay mờ.[cite: 7]</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-[#f8b500] fa-file-invoice-dollar mt-1 text-[#f8b500]"></i> <span><strong>2. Thuế eTax Mobile:</strong> Bắt buộc hoàn thành nghĩa vụ thuế cá nhân / doanh nghiệp trước khi tới sân bay.[cite: 7]</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-money-bill-wave text-[#f8b500] mt-1"></i> <span><strong>3. Giấy Tờ & Tài Chính:</strong> Mang Visa, Boarding Pass, tiền mặt USD / EUR và thẻ quốc tế Visa / Mastercard.[cite: 7]</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-clock text-[#f8b500] mt-1"></i> <span><strong>4. Giờ Tập Trung:</strong> 18h00 ngày 25/10/2026 tại Công ty CP Thống Nhất Hà Nội.[cite: 7]</span></li>
                 </ul>
             </div>
 
             <div class="glass-dark rounded-3xl p-6 border border-[#c5a059]/30">
                 <h3 class="text-lg font-bold gold-text border-b border-[#c5a059]/30 pb-3 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-shirt text-[#f8b500]"></i> Thời Tiết & Trang Phục
+                    <i class="fa-solid fa-suitcase-rolling text-[#f8b500]"></i> Quy Định Hành Lý & Kỹ Thuật
                 </h3>
                 <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-temperature-arrow-down text-[#f8b500] mt-1"></i> <span><strong>Thời tiết:</strong> Se lạnh (Cappadocia: 7°C - 20°C, Istanbul: 13°C - 25°C).[cite: 1]</span></li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-user-ninja text-[#f8b500] mt-1"></i> <span><strong>Phối đồ Layering:</strong> Áo thun + Áo len mỏng + Áo khoác ấm.[cite: 1]</span></li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-mosque text-[#f8b500] mt-1"></i> <span><strong>Vào Thánh Đường:</strong> Trang phục kín đáo. Nữ giới tự chuẩn bị khăn choàng đầu.[cite: 1]</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plane-luggage text-[#f8b500] mt-1"></i> <span><strong>Hành lý Turkish Airlines:</strong> Ký gửi tối đa 30kg; Xách tay 1 kiện < 8kg (mỗi chai chất lỏng ≤ 100ml).[cite: 7]</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plug text-[#f8b500] mt-1"></i> <span><strong>Ổ Cắm & Internet:</strong> Chuẩn Châu Âu 2 chấu tròn nhỏ (chân chìm 1cm). Khuyên dùng Adapter đa năng & Mua Sim 4G/Roaming.[cite: 7]</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-pump-soap text-[#f8b500] mt-1"></i> <span><strong>Vật Dụng Cá Nhân:</strong> Chuẩn bị bàn chải, kem đánh răng, thuốc đặc trị & xu lẻ Lira (1 TL/lần đi vệ sinh).[cite: 7]</span></li>
                 </ul>
             </div>
         </section>
 
+        <!-- ==================== KHỐI 4: THỜI TIẾT & MẶC ĐẸP ==================== -->
+        <section id="thoi-tiet" class="scroll-mt-6 glass-dark rounded-3xl p-6 sm:p-8 border border-[#c5a059]/30 space-y-6">
+            <h2 class="text-xl font-bold gold-text flex items-center gap-2 border-b border-[#c5a059]/30 pb-3">
+                <i class="fa-solid fa-cloud-sun text-[#f8b500]"></i> Thời Tiết & Mặc Đẹp (Dự Báo Mùa Thu)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
+                    <p class="font-bold text-[#f8b500] text-sm"><i class="fa-solid fa-temperature-half"></i> Thời Tiết Tháng 10</p>
+                    <p class="text-xs text-slate-300 mt-2">Thời tiết se lạnh dễ chịu, ngày mát mẻ, sáng sớm & đêm biên độ nhiệt cao.[cite: 7]</p>
+                    <p class="text-xs font-semibold text-slate-200 mt-2">• Cappadocia: 7°C - 20°C<br>• Istanbul & Ven biển: 13°C - 25°C[cite: 7]</p>
+                </div>
+                <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
+                    <p class="font-bold text-[#f8b500] text-sm"><i class="fa-solid fa-shirt"></i> Phối Đồ Nhiều Lớp</p>
+                    <p class="text-xs text-slate-300 mt-2">Áp dụng công thức Layering linh hoạt: Áo thun + Áo len mỏng + Áo khoác ấm chắn gió.[cite: 7]</p>
+                    <p class="text-xs font-bold text-[#e7c067] mt-2"><i class="fa-solid fa-shoe-prints"></i> Bắt buộc dùng giày thể thao đi bộ êm chân.[cite: 7]</p>
+                </div>
+                <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
+                    <p class="font-bold text-[#f8b500] text-sm"><i class="fa-solid fa-mosque"></i> Quy Tắc Thánh Đường</p>
+                    <p class="text-xs text-slate-300 mt-2">Trang phục lịch sự kín đáo (che vai & đầu gối).[cite: 7]</p>
+                    <p class="text-xs font-bold text-[#e7c067] mt-2">• Nữ giới tự chuẩn bị sẵn khăn choàng đầu.[cite: 7]</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- ==================== KHỐI 4: HÌNH ẢNH ĐIỂM ĐẾN ==================== -->
+        <!-- ==================== KHỐI 5: ĐIỂM ĐẾN CHI TIẾT & BẮT LINK ONLINE ==================== -->
         <section id="diem-den" class="scroll-mt-6 space-y-6">
             <h2 class="text-xl font-bold gold-text flex items-center gap-2">
-                <i class="fa-solid fa-images text-[#f8b500]"></i> Hình Ảnh & Điểm Đến
+                <i class="fa-solid fa-map-location-dot text-[#f8b500]"></i> Khám Phá Các Điểm Đến Chi Tiết
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-dark rounded-2xl overflow-hidden border border-[#c5a059]/30">
-                    <img src="https://www.hotairballooncappadocia.com/wp-content/uploads/standard-balloon-flight-cappadocia-sunrise.png" class="w-full h-40 object-cover" alt="Cappadocia">
-                    <div class="p-4">
-                        <h4 class="font-bold text-[#f8b500]">Cappadocia</h4>
-                        <p class="text-xs text-slate-300 mt-1">Khinh khí cầu & Thung lũng thần tiên[cite: 1]</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Cappadocia & Konya -->
+                <div class="glass-dark rounded-2xl overflow-hidden border border-[#c5a059]/30 flex flex-col justify-between">
+                    <img src="https://www.hotairballooncappadocia.com/wp-content/uploads/standard-balloon-flight-cappadocia-sunrise.png" class="w-full h-48 object-cover" alt="Cappadocia">[cite: 7]
+                    <div class="p-5 space-y-2">
+                        <span class="text-[10px] font-extrabold bg-[#c5a059]/20 text-[#f8b500] px-2.5 py-1 rounded-full uppercase">Cappadocia (26/10 - 27/10) & Konya (28/10)</span>[cite: 7]
+                        <h3 class="text-base font-bold text-slate-100">Khám Phá Cappadocia & Konya</h3>
+                        <p class="text-xs text-slate-300"><strong>Điểm nổi bật:</strong> Ngắm bình minh khinh khí cầu, thung lũng "ống khói thần tiên", Tu viện Mevlana & điệu múa Xoay Sufi Dervish.[cite: 7]</p>
+                        <p class="text-xs text-slate-300"><strong>Đặc sản & Quà:</strong> Meatball Testi Kebap (hầm niêu đất), Gốm Avanos, mắt quỷ Nazar, Bánh mì dẹt Etli Ekmek, thịt cừu nướng Fırın Kebabı.[cite: 7]</p>
                     </div>
                 </div>
 
-                <div class="glass-dark rounded-2xl overflow-hidden border border-[#c5a059]/30">
-                    <img src="https://storage.ghost.io/c/3b/93/3b93ff44-7102-4a5b-8c50-2039edfce556/content/images/2025/08/pamukkale.jpg" class="w-full h-40 object-cover" alt="Pamukkale">
-                    <div class="p-4">
-                        <h4 class="font-bold text-[#f8b500]">Pamukkale</h4>
-                        <p class="text-xs text-slate-300 mt-1">Lâu đài bông & Suối khoáng nóng[cite: 1]</p>
+                <!-- Pamukkale & Ephesus -->
+                <div class="glass-dark rounded-2xl overflow-hidden border border-[#c5a059]/30 flex flex-col justify-between">
+                    <img src="https://storage.ghost.io/c/3b/93/3b93ff44-7102-4a5b-8c50-2039edfce556/content/images/2025/08/pamukkale.jpg" class="w-full h-48 object-cover" alt="Pamukkale">[cite: 7]
+                    <div class="p-5 space-y-2">
+                        <span class="text-[10px] font-extrabold bg-[#c5a059]/20 text-[#f8b500] px-2.5 py-1 rounded-full uppercase">Pamukkale (28/10 - 29/10) & Izmir (29/10 - 30/10)</span>[cite: 7]
+                        <h3 class="text-base font-bold text-slate-100">Pamukkale & Izmir - Ephesus</h3>
+                        <p class="text-xs text-slate-300"><strong>Điểm nổi bật:</strong> Kỳ quan "Lâu Đài Bông" suối khoáng xanh ngọc, Thành cổ La Mã Hierapolis & Ephesus, Làng cổ Şirince.[cite: 7]</p>
+                        <p class="text-xs text-slate-300"><strong>Đặc sản & Quà:</strong> Dệt bông thiên nhiên, mỹ phẩm khoáng nóng, Rượu trái cây Şirince, đồ da cao cấp Thổ Nhĩ Kỳ.[cite: 7]</p>
                     </div>
                 </div>
 
-                <div class="glass-dark rounded-2xl overflow-hidden border border-[#c5a059]/30">
-                    <img src="https://turkisharchaeonews.net/sites/tan/files/pictures/objects/library-celsus-ephesus/celsus_library_lead.jpg" class="w-full h-40 object-cover" alt="Ephesus">
-                    <div class="p-4">
-                        <h4 class="font-bold text-[#f8b500]">Ephesus</h4>
-                        <p class="text-xs text-slate-300 mt-1">Thành cổ La Mã di sản thế giới[cite: 1]</p>
+                <!-- Çanakkale & Troy -->
+                <div class="glass-dark rounded-2xl overflow-hidden border border-[#c5a059]/30 flex flex-col justify-between">
+                    <img src="https://www.onenationtravel.com/wp-content/uploads/2026/01/trojan-horse-statue-ancient-troy-turkey-sunset-768x512.webp" class="w-full h-48 object-cover" alt="Troy">[cite: 7]
+                    <div class="p-5 space-y-2">
+                        <span class="text-[10px] font-extrabold bg-[#c5a059]/20 text-[#f8b500] px-2.5 py-1 rounded-full uppercase">Çanakkale (30/10 - 31/10)</span>[cite: 7]
+                        <h3 class="text-base font-bold text-slate-100">Çanakkale & Huyền Thoại Troy</h3>
+                        <p class="text-xs text-slate-300"><strong>Điểm nổi bật:</strong> Tàn tích Thành cổ Troy huyền thoại & Mô hình Ngựa gỗ Hollywood.[cite: 7]</p>
+                        <p class="text-xs text-slate-300"><strong>Đặc sản:</strong> Peynir Helvası (bánh tráng miệng phô mai nướng độc đáo).[cite: 7]</p>
+                    </div>
+                </div>
+
+                <!-- Istanbul -->
+                <div class="glass-dark rounded-2xl overflow-hidden border border-[#c5a059]/30 flex flex-col justify-between">
+                    <img src="https://media-gadventures.global.ssl.fastly.net/media-server/dynamic/blogs/posts/G-Adventures/2025/02/blog-turkey-women-travel-scarf.webp" class="w-full h-48 object-cover" alt="Istanbul">[cite: 7]
+                    <div class="p-5 space-y-2">
+                        <span class="text-[10px] font-extrabold bg-[#c5a059]/20 text-[#f8b500] px-2.5 py-1 rounded-full uppercase">Istanbul (25-26/10 & 31/10 - 01/11)</span>[cite: 7]
+                        <h3 class="text-base font-bold text-slate-100">Istanbul - Trái Tim Thổ Nhĩ Kỳ</h3>
+                        <p class="text-xs text-slate-300"><strong>Điểm nổi bật:</strong> Du thuyền Bosphorus, Thánh đường Xanh, Hagia Sophia, Chợ Grand Bazaar.[cite: 7]</p>
+                        <p class="text-xs text-slate-300"><strong>Đặc sản & Quà:</strong> Kẹo Turkish Delight, Cà phê Thổ, Đèn Mosaic, Trà đen & tách Tulip.[cite: 7]</p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- ==================== LƯU Ý KHẨN CẤP ==================== -->
+        <section class="glass-dark rounded-3xl p-6 text-center border border-[#c5a059]/40 space-y-2">
+            <h3 class="text-sm font-bold text-[#f8b500] uppercase"><i class="fa-solid fa-triangle-exclamation"></i> Lưu Ý Khẩn Cấp Suốt Chuyến Đi</h3>
+            <p class="text-xs text-slate-300 max-w-2xl mx-auto">
+                Luôn giữ Namecard khách sạn và Số điện thoại Trưởng đoàn / HDV địa phương bên người. Trưởng đoàn Vietravel luôn đồng hành và hỗ trợ quý khách.[cite: 7]
+            </p>
+            <p class="text-[10px] text-slate-400 pt-2 font-semibold">VIETRAVEL - NHÀ TỔ CHỨC DU LỊCH CHUYÊN NGHIỆP[cite: 7]</p>
         </section>
 
     </main>
 
-
-    <!-- ==================== CỘT/THANH ĐIỀU HƯỚNG CỐ ĐỊNH CHÂN TRANG (STICKY BOTTOM NAV) ==================== -->
-    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-[#051329]/95 backdrop-filter backdrop-blur-lg border-t border-[#c5a059]/50 shadow-2xl py-2 px-4">
+    <!-- ==================== STICKY BOTTOM NAV ==================== -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-[#051329]/95 backdrop-filter backdrop-blur-lg border-t border-[#c5a059]/50 shadow-2xl py-2.5 px-4">
         <div class="max-w-md mx-auto flex justify-around items-center text-center">
-            
-            <a href="#thong-tin" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition group">
-                <i class="fa-solid fa-plane-departure text-base group-hover:scale-110 transition"></i>
+            <a href="#thong-tin" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition">
+                <i class="fa-solid fa-plane-departure text-base"></i>
                 <span class="text-[10px] mt-1 font-medium">Khởi hành</span>
             </a>
-
-            <a href="#lich-trinh" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition group">
-                <i class="fa-solid fa-route text-base group-hover:scale-110 transition"></i>
+            <a href="#lich-trinh" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition">
+                <i class="fa-solid fa-route text-base"></i>
                 <span class="text-[10px] mt-1 font-medium">Lịch trình</span>
             </a>
-
-            <a href="#chuann-bi" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition group">
-                <i class="fa-solid fa-clipboard-check text-base group-hover:scale-110 transition"></i>
+            <a href="#chuan-bi" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition">
+                <i class="fa-solid fa-clipboard-check text-base"></i>
                 <span class="text-[10px] mt-1 font-medium">Chuẩn bị</span>
             </a>
-
-            <a href="#diem-den" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition group">
-                <i class="fa-solid fa-map-location-dot text-base group-hover:scale-110 transition"></i>
+            <a href="#thoi-tiet" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition">
+                <i class="fa-solid fa-cloud-sun text-base"></i>
+                <span class="text-[10px] mt-1 font-medium">Thời tiết</span>
+            </a>
+            <a href="#diem-den" class="flex flex-col items-center text-slate-300 hover:text-[#f8b500] transition">
+                <i class="fa-solid fa-map-location-dot text-base"></i>
                 <span class="text-[10px] mt-1 font-medium">Điểm đến</span>
             </a>
-
         </div>
     </nav>
 
