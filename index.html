@@ -15,14 +15,14 @@
             color: #e2e8f0;
         }
 
-        /* Chữ ánh vàng kim */
+        /* Gradient ánh vàng kim theo nhận diện thương hiệu Thống Nhất */
         .gold-text {
             background: linear-gradient(135deg, #fceabb 0%, #f8b500 50%, #e7c067 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Thẻ nền tối hiệu ứng kính mờ */
+        /* Thẻ nền tối hiệu ứng kính mờ (Glassmorphism) */
         .glass-dark {
             background: rgba(10, 25, 47, 0.85);
             backdrop-filter: blur(12px);
@@ -35,14 +35,14 @@
     <!-- ==================== BANNER HEADER ==================== -->
     <header class="relative bg-[#051329] border-b border-[#c5a059]/40 py-10 px-4 text-center shadow-2xl overflow-hidden">
         <div class="max-w-4xl mx-auto space-y-3 relative z-10">
-            <p class="text-xs uppercase tracking-[0.3em] text-slate-300 font-semibold">• thongnhat •</p>
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-300 font-semibold">• THONGNHAT •</p>
             
             <div class="flex justify-center my-2">
                 <i class="fa-solid fa-mosque text-3xl text-[#e7c067]"></i>
             </div>
 
             <h1 class="text-3xl sm:text-5xl font-extrabold tracking-wide gold-text uppercase">
-                Hành Trình Thổ Nhĩ Kỳ
+                HÀNH TRÌNH THỔ NHĨ KỲ
             </h1>
             <div class="text-2xl sm:text-4xl font-extrabold text-[#f8b500] tracking-widest flex items-center justify-center gap-2">
                 2026
@@ -54,31 +54,105 @@
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-8 space-y-12">
+    <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+
+        <!-- ==================== KHỐI TIỆN ÍCH ĐỘNG (ĐỒNG HỒ, THỜI TIẾT & TỶ GIÁ) ==================== -->
+        <section class="glass-dark rounded-3xl p-5 border border-[#c5a059]/40 shadow-xl space-y-5">
+            
+            <!-- Phần 1: Giờ Realtime & Thời Tiết -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-center divide-y md:divide-y-0 md:divide-x divide-[#c5a059]/20 border-b border-[#c5a059]/20 pb-4">
+                <!-- Giờ Việt Nam -->
+                <div class="py-2 md:py-0">
+                    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-clock text-[#f8b500]"></i> Giờ Việt Nam (GMT+7)
+                    </p>
+                    <p id="clock-vn" class="text-2xl font-extrabold text-slate-100 tracking-wider mt-1">--:--:--</p>
+                </div>
+
+                <!-- Giờ Thổ Nhĩ Kỳ -->
+                <div class="py-2 md:py-0">
+                    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-clock text-[#f8b500]"></i> Giờ Thổ Nhĩ Kỳ (GMT+3)
+                    </p>
+                    <p id="clock-tr" class="text-2xl font-extrabold gold-text tracking-wider mt-1">--:--:--</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">(Chậm hơn VN 4 tiếng)</p>
+                </div>
+
+                <!-- Thời tiết Thổ Nhĩ Kỳ -->
+                <div class="py-2 md:py-0">
+                    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-cloud-sun text-[#f8b500]"></i> Thời Tiết Thổ Nhĩ Kỳ
+                    </p>
+                    <div class="flex items-center justify-center gap-2 mt-1">
+                        <span class="text-2xl font-bold text-slate-100">13°C - 22°C</span>
+                        <span class="text-xs bg-[#c5a059]/20 text-[#f8b500] px-2 py-0.5 rounded-full font-semibold">Mùa thu se lạnh</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phần 2: Tỷ Giá Ngoại Tệ -->
+            <div>
+                <p class="text-[11px] font-bold text-[#f8b500] uppercase tracking-wider text-center mb-3 flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-coins"></i> Tỷ Giá Ngoại Tệ Tham Khảo (VND - USD - TRY)
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+                    <div class="bg-[#081b36] p-3 rounded-2xl border border-[#c5a059]/20">
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">1 USD ➔ VND</p>
+                        <p class="text-base font-extrabold text-slate-100 mt-0.5">~ 25,400 <span class="text-xs font-normal text-slate-400">VND</span></p>
+                    </div>
+
+                    <div class="bg-[#081b36] p-3 rounded-2xl border border-[#c5a059]/20">
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">1 USD ➔ TURKEY (TRY)</p>
+                        <p class="text-base font-extrabold text-slate-100 mt-0.5">~ 34.2 <span class="text-xs font-normal text-slate-400">TRY</span></p>
+                    </div>
+
+                    <div class="bg-[#081b36] p-3 rounded-2xl border border-[#c5a059]/20">
+                        <p class="text-[10px] font-bold text-[#f8b500] uppercase">1 TRY (LIRA) ➔ VND</p>
+                        <p class="text-base font-extrabold gold-text mt-0.5">~ 740 <span class="text-xs font-normal text-slate-400">VND</span></p>
+                    </div>
+                </div>
+                <p class="text-[10px] text-slate-400 text-center mt-2 italic">* Mẹo nhanh: 100 Lira (TRY) xấp xỉ khoảng 74,000 VNĐ</p>
+            </div>
+
+        </section>
 
         <!-- ==================== KHỐI 1: TỔNG QUAN & KHỞI HÀNH ==================== -->
         <section id="thong-tin" class="scroll-mt-6 glass-dark rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+            
             <!-- 3 Tiêu chuẩn chính -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 border-b border-[#c5a059]/30 pb-6">
+                <!-- Thời lượng -->
                 <div class="flex items-center gap-3 bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
                     <i class="fa-solid fa-clock text-[#f8b500] text-2xl"></i>
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase">Thời Lượng</p>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">THỜI LƯỢNG</p>
                         <p class="text-sm font-bold text-slate-100">9 Ngày 8 Đêm</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-3 bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
-                    <i class="fa-solid fa-plane text-[#f8b500] text-2xl"></i>
-                    <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase">Hàng Không</p>
-                        <p class="text-sm font-bold text-slate-100">Turkish Airlines 4★ (TK165/TK252)</p>
+
+                <!-- Ô Hàng không có nút tra cứu Google -->
+                <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20 flex flex-col justify-between">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-plane text-[#f8b500] text-2xl"></i>
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase">HÀNG KHÔNG</p>
+                            <p class="text-sm font-bold text-slate-100">Turkish Airlines 4★</p>
+                            <p class="text-xs text-slate-300">(TK165/TK252)</p>
+                        </div>
                     </div>
+                    <a href="https://www.google.com/search?q=Turkish+Airlines+TK165+TK252+flight+status" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center justify-center gap-1.5 w-full bg-[#c5a059]/20 hover:bg-[#c5a059]/40 text-[#f8b500] hover:text-white text-[11px] font-bold py-1.5 rounded-xl border border-[#c5a059]/40 transition group">
+                        <span>Ấn để xem chi tiết</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px] group-hover:translate-x-0.5 transition"></i>
+                    </a>
                 </div>
+
+                <!-- Lưu trú -->
                 <div class="flex items-center gap-3 bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
                     <i class="fa-solid fa-hotel text-[#f8b500] text-2xl"></i>
                     <div>
-                        <p class="text-[10px] text-slate-400 font-bold uppercase">Lưu Trú</p>
-                        <p class="text-sm font-bold text-slate-100">Khách Sạn 5★ & Khách Sạn Hang Đá</p>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">LƯU TRÚ</p>
+                        <p class="text-sm font-bold text-slate-100">Khách Sạn 5★ & Hang Đá</p>
                     </div>
                 </div>
             </div>
@@ -154,7 +228,7 @@
                             <td class="p-3 border-r border-[#c5a059]/20 font-semibold">Cappadocia - Konya - Pamukkale</td>
                             <td class="p-3 border-r border-[#c5a059]/20">Thăm Tu viện Mevlana (Konya), di chuyển về Pamukkale</td>
                             <td class="p-3 border-r border-[#c5a059]/20">~3 tiếng (~260km) / ~4 tiếng (~380km)</td>
-                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Pamukkale</td>
+                            <td class="p-3">Ăn 3 bữa. Nghỉ đêm tại Pamukkale[cite: 7]</td>
                         </tr>
                         <tr class="hover:bg-[#0b2247]/50">
                             <td class="p-3 text-center font-bold text-[#f8b500] border-r border-[#c5a059]/20">29.10</td>
@@ -204,7 +278,7 @@
                 </h3>
                 <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
                     <li class="flex items-start gap-2"><i class="fa-solid fa-passport text-[#f8b500] mt-1"></i> <span><strong>1. Hộ Chiếu Phổ Thông:</strong> Trùng khớp hoàn toàn với Visa. Hạn sử dụng > 6 tháng, không rách hay mờ.</span></li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-[#f8b500] fa-file-invoice-dollar mt-1 text-[#f8b500]"></i> <span><strong>2. Thuế eTax Mobile:</strong> Bắt buộc hoàn thành nghĩa vụ thuế cá nhân / doanh nghiệp trước khi tới sân bay.</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-file-invoice-dollar text-[#f8b500] mt-1"></i> <span><strong>2. Thuế eTax Mobile:</strong> Bắt buộc hoàn thành nghĩa vụ thuế cá nhân / doanh nghiệp trước khi tới sân bay.</span></li>
                     <li class="flex items-start gap-2"><i class="fa-solid fa-money-bill-wave text-[#f8b500] mt-1"></i> <span><strong>3. Giấy Tờ & Tài Chính:</strong> Mang Visa, Boarding Pass, tiền mặt USD / EUR và thẻ quốc tế Visa / Mastercard.</span></li>
                     <li class="flex items-start gap-2"><i class="fa-solid fa-clock text-[#f8b500] mt-1"></i> <span><strong>4. Giờ Tập Trung:</strong> 18h00 ngày 25/10/2026 tại Công ty CP Thống Nhất Hà Nội.</span></li>
                 </ul>
@@ -216,7 +290,7 @@
                 </h3>
                 <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
                     <li class="flex items-start gap-2"><i class="fa-solid fa-plane-luggage text-[#f8b500] mt-1"></i> <span><strong>Hành lý Turkish Airlines:</strong> Ký gửi tối đa 30kg; Xách tay 1 kiện < 8kg (mỗi chai chất lỏng ≤ 100ml).</span></li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-plug text-[#f8b500] mt-1"></i> <span><strong>Ổ Cắm & Internet:</strong> Chuẩn Châu Âu 2 chấu tròn nhỏ (chân chìm 1cm). Khuyên dùng Adapter đa năng & Mua Sim 4G/Roaming.</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-plug text-[#f8b500] mt-1"></i> <span><strong>Ổ Cắm & Internet:</strong> Chuẩn Châu Âu 2 chấu tròn nhỏ (chân chìm 1cm). Khuyên dùng Adapter đa năng & Mua Sim 5G/Roaming.</span></li>
                     <li class="flex items-start gap-2"><i class="fa-solid fa-pump-soap text-[#f8b500] mt-1"></i> <span><strong>Vật Dụng Cá Nhân:</strong> Chuẩn bị bàn chải, kem đánh răng, thuốc đặc trị & xu lẻ Lira (1 TL/lần đi vệ sinh).</span></li>
                 </ul>
             </div>
@@ -240,13 +314,13 @@
                 </div>
                 <div class="bg-[#081b36] p-4 rounded-2xl border border-[#c5a059]/20">
                     <p class="font-bold text-[#f8b500] text-sm"><i class="fa-solid fa-mosque"></i> Quy Tắc Thánh Đường</p>
-                    <p class="text-xs text-slate-300 mt-2">Trang phục lịch sự kín đáo (che vai & đầu gối).[cite: 7]</p>
-                    <p class="text-xs font-bold text-[#e7c067] mt-2">• Nữ giới tự chuẩn bị sẵn khăn choàng đầu.[cite: 7]</p>
+                    <p class="text-xs text-slate-300 mt-2">Trang phục lịch sự kín đáo (che vai & đầu gối).</p>
+                    <p class="text-xs font-bold text-[#e7c067] mt-2">• Nữ giới tự chuẩn bị sẵn khăn choàng đầu.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== KHỐI 5: ĐIỂM ĐẾN CHI TIẾT & BẮT LINK ONLINE ==================== -->
+        <!-- ==================== KHỐI 5: ĐIỂM ĐẾN CHI TIẾT ==================== -->
         <section id="diem-den" class="scroll-mt-6 space-y-6">
             <h2 class="text-xl font-bold gold-text flex items-center gap-2">
                 <i class="fa-solid fa-map-location-dot text-[#f8b500]"></i> Khám Phá Các Điểm Đến Chi Tiết
@@ -258,8 +332,8 @@
                     <img src="https://www.hotairballooncappadocia.com/wp-content/uploads/standard-balloon-flight-cappadocia-sunrise.png" class="w-full h-48 object-cover" alt="Cappadocia">
                     <div class="p-5 space-y-2">
                         <span class="text-[10px] font-extrabold bg-[#c5a059]/20 text-[#f8b500] px-2.5 py-1 rounded-full uppercase">Cappadocia (26/10 - 27/10) & Konya (28/10)</span>
-                        <h3 class="text-base font-bold text-slate-100">Khám Phá Cappadocia & Konya</h3>
-                        <p class="text-xs text-slate-300"><strong>Điểm nổi bật:</strong> Ngắm bình minh , thung lũng "ống khói thần tiên", Tu viện Mevlana & điệu múa Xoay Sufi Dervish.</p>
+                        <h3 class="text-base font-bold text-slate-100">Khám Phá Cappadocia & Konya[cite: 7]</h3>
+                        <p class="text-xs text-slate-300"><strong>Điểm nổi bật:</strong> Ngắm bình minh khinh khí cầu, thung lũng "ống khói thần tiên", Tu viện Mevlana & điệu múa Xoay Sufi Dervish.</p>
                         <p class="text-xs text-slate-300"><strong>Đặc sản & Quà:</strong> Meatball Testi Kebap (hầm niêu đất), Gốm Avanos, mắt quỷ Nazar, Bánh mì dẹt Etli Ekmek, thịt cừu nướng Fırın Kebabı.</p>
                     </div>
                 </div>
@@ -301,11 +375,11 @@
 
         <!-- ==================== LƯU Ý KHẨN CẤP ==================== -->
         <section class="glass-dark rounded-3xl p-6 text-center border border-[#c5a059]/40 space-y-2">
-            <h3 class="text-sm font-bold text-[#f8b500] uppercase"><i class="fa-solid fa-triangle-exclamation"></i> Lưu Ý suốt Chuyến Đi</h3>
+            <h3 class="text-sm font-bold text-[#f8b500] uppercase"><i class="fa-solid fa-triangle-exclamation"></i> Lưu Ý Suốt Chuyến Đi</h3>
             <p class="text-xs text-slate-300 max-w-2xl mx-auto">
-                Luôn giữ Namecard khách sạn và Số điện thoại Trưởng đoàn / HDV địa phương bên người. Xe đạp Thống Nhất và Vietravel luôn đồng hành và hỗ trợ quý khách.
+                Luôn giữ Namecard khách sạn và Số điện thoại Trưởng đoàn / HDV địa phương bên người. Thống Nhất và Vietravel luôn đồng hành và hỗ trợ quý khách.
             </p>
-            <p class="text-[10px] text-slate-400 pt-2 font-semibold"> thongnhat </p>
+            <p class="text-[10px] text-slate-400 pt-2 font-semibold">VIETRAVEL - NHÀ TỔ CHỨC DU LỊCH CHUYÊN NGHIỆP</p>
         </section>
 
     </main>
@@ -335,6 +409,22 @@
             </a>
         </div>
     </nav>
+
+    <!-- JS ĐỒNG HỒ REAL-TIME -->
+    <script>
+        function updateClocks() {
+            const now = new Date();
+
+            const optionsVN = { timeZone: 'Asia/Ho_Chi_Minh', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            document.getElementById('clock-vn').textContent = new Intl.DateTimeFormat('vi-VN', optionsVN).format(now);
+
+            const optionsTR = { timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            document.getElementById('clock-tr').textContent = new Intl.DateTimeFormat('vi-VN', optionsTR).format(now);
+        }
+
+        setInterval(updateClocks, 1000);
+        updateClocks();
+    </script>
 
 </body>
 </html>
